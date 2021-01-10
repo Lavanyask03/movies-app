@@ -1,19 +1,18 @@
 .search {
     display: flex;
     justify-content: space-between;
+    height: 40px;
 }
 
 .search-input {
-    margin: 0;
-    height: 30px;
-    width: 100%;
+    margin: 0 10px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     color: white;
     background-color: #15284e;
     border: aquamarine solid 2px;
-    border-radius: 5%;
-    padding: 5px;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .search-btn {
@@ -21,6 +20,7 @@
     background-color: aquamarine;
     color: #15284e;
     border: none;
+    border-radius: 5px;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
@@ -31,8 +31,8 @@
 
 .search-input::placeholder {
     font-weight: 600;
-    color: darkgray;
-    padding-left: 5px;
+    color: #ccc;
+    padding: 0;
 }
 
 .search-input:focus {

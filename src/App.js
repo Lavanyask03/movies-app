@@ -7,19 +7,24 @@ import MovieList from './MovieList';
 
 class App extends Component{
 
-  API_KEY = "YOUR_API_KEY";
+  API_KEY = "bad70be0";
 
   state = {
     movies : []
   }
 
   sendRequest = (title) => {
-    fetch(`https://www.omdbapi.com/?s=${title}&apikey=${this.API_KEY}`)
+    if (title.trim()) {
+       fetch(`https://www.omdbapi.com/?s=${title}&apikey=${this.API_KEY}`)
         .then(response => response.json())
         .then(jsonResponse => {
             this.setState({movies:jsonResponse.Search});
-        });
+        });     
+    } 
+    else {
+      return;      
     }
+  }
 
   render() {
     return (
@@ -29,11 +34,7 @@ class App extends Component{
           <Search sendRequest = {this.sendRequest} />
         </header>
         <main id = "main" >
-          {
-            this.state.movies.length === 0
-            ? <h1> No Results!! </h1>
-            : <MovieList movies = {this.state.movies} />
-          }
+            <MovieList movies = {this.state.movies} />
         </main>
       </div>
     );

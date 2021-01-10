@@ -1,7 +1,10 @@
+body {
+  background-color: #15284e;
+}
+
 .App {
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
-  background-color: #15284e;
 }
 
 .App-header, #main {
