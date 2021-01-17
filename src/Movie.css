@@ -2,6 +2,7 @@
     display: inline-block;
     height: max-content;
     width: 400px;
+    font-family: 'Courier New', Courier, monospace;
     color: white;
     background-color: aquamarine;
     margin: 20px;
@@ -12,28 +13,19 @@
     overflow: hidden;
  }
 
- .grow {
-    transition: all .2s ease-in-out; 
- }
-
- .grow:hover { 
-    transform: scale(1.1); 
-   }
-
  .title-year {
     display: flex;
     justify-content: space-between;
     align-items: center;
  }
   
- .title, .year {
+ .title, .year{
     font-weight: bold;
     font-size: 1.5rem;
-    font-family: 'Courier New', Courier, monospace;
     color: #15284e;
  }
   
- .year {
+ .year, .plot {
     background-color: #15284e;
     color: white;
     padding: 2px;
@@ -43,3 +35,45 @@
  .poster {
     border-radius: 5%;
  }
+
+ /*
+.flip-card {
+   background-color: transparent;
+   width: 300px;
+   height: 200px;
+   border: 1px solid #f1f1f1;
+   perspective: 1000px;
+ }
+ 
+ .flip-card-inner {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.8s;
+   transform-style: preserve-3d;
+ }
+ 
+ .flip-card:hover .flip-card-inner {
+   transform: rotateY(180deg);
+ }
+ 
+ .flip-card-front, .flip-card-back {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   -webkit-backface-visibility: hidden;
+   backface-visibility: hidden;
+ }
+ 
+ .flip-card-front {
+   background-color: #bbb;
+   color: black;
+ }
+ 
+ .flip-card-back {
+   background-color: dodgerblue;
+   color: white;
+   transform: rotateY(180deg);
+ }
+ */
