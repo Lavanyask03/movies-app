@@ -18,7 +18,7 @@ body {
   padding-bottom: 5%;
 }
 
-#main {
+.main {
   display: flex;
   flex-wrap: wrap;
   height: 100%;

@@ -33,7 +33,7 @@ class App extends Component{
           <h1> Movies App </h1>
           <Search sendRequest = {this.sendRequest} />
         </header>
-        <main id = "main" >
+        <main className = "main" >
             <MovieList movies = {this.state.movies} />
         </main>
       </div>

@@ -18,7 +18,7 @@ cd movies-app
 ```
 npm install
 ```
-4. Add your own api key in src/App.js file. You can an api key from [here](http://www.omdbapi.com/)
+4. Add your own api key in src/App.js file. You can get an api key from [here](http://www.omdbapi.com/)
 5. Run the application.
 ```
 npm start

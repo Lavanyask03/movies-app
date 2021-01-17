@@ -55,17 +55,17 @@ class Movie extends Component {
         const PosterURL = Poster === "N/A"? POSTER_UNAVAILABLE :Poster;
 
         return (
-            <div className = 'movie flip-card' >
+            <div className = 'flip-card' >
                 <div className="flip-card-inner">
                     <div className="flip-card-front">
-                        <img className="poster" src={PosterURL} alt="my movie poster" width="400" />
-                        <div className="title-year">
+                        <img className="front-image" src={PosterURL} alt="my movie poster" width="400" />
+                        <div className="front-content">
                             <h1 className="title"> {Title} </h1>
                             <h2 className="year"> {Year} </h2>
                         </div>
                     </div>
                 
-                    <div className="plot flip-card-back">
+                    <div className="flip-card-back">
                         {this.state.movie_plot}
                     </div>
                 </div>
